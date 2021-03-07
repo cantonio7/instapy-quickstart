@@ -8,8 +8,8 @@ What does this quickstart script aim to do?
 from instapy import InstaPy
 from instapy import smart_run
 
-insta_username = ''
-insta_password = ''
+insta_username = 'caio_on_tech'
+insta_password = '#Pp110717#F'
 
 # get a session!
 session = InstaPy(username=insta_username,
@@ -32,11 +32,13 @@ with smart_run(session):
     session.set_do_like(enabled=True, percentage=100)
     session.set_do_comment(enabled=True, percentage=5)
     session.set_comments(
-        ['Nice shot! @{}', 'I love your profile! @{}', '@{} Love it!',
+        ['Nice shot! @{}',
+         'I like your profile! @{}',
+         '@{} LIKE it!',
         '@{} :heart::heart:',
-        'Love your posts @{}',
+        'Great your posts @{}',
         'Looks awesome @{}',
-        'Getting inspired by you @{}',
+        'Nice Post @{}',
         ':raised_hands: Yes!',
          '@{}:revolving_hearts::revolving_hearts:', '@{}:fire::fire::fire:'],
         media='Photo')
@@ -53,4 +55,4 @@ with smart_run(session):
 
     """ Joining Engagement Pods...
     """
-    session.join_pods(topic='entertainment', engagement_mode='no_comments')
+    session.join_pods(topic='technology', engagement_mode='no_comments')

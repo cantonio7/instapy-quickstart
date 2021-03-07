@@ -3,17 +3,17 @@ from instapy import InstaPy
 from instapy import smart_run
 
 # login credentials
-insta_username = ''
-insta_password = ''
+insta_username = 'caio_on_tech'
+insta_password = '#Pp110717#F'
 
 comments = ['Nice shot! @{}',
-        'Your profile is grate! @{}',
+        'Your profile is greate! @{}',
         'Your feed is an inspiration :thumbsup:',
         'Just incredible :open_mouth:',
-        'What camera did you use @{}?',
+        'Amazing Pick @{}?',
         'Great posts @{}',
         'Looks awesome @{}',
-        'Amazing Pick @{}',
+        'Amazing @{}',
         ':raised_hands: Yes!',
         'Nice pick @{} :muscle:']
 
@@ -29,9 +29,9 @@ with smart_run(session):
   session.set_dont_include(["friend1", "friend2", "friend3"])		
   
   # activity		
-  session.like_by_tags(["programing", "programmer", "fintech", "blockchain"], amount=10)
+  session.like_by_tags(["programing", "programmer", "fintech", "digital bank"], amount=10)
 
   # Joining Engagement Pods
   session.set_do_comment(enabled=True, percentage=35)
   session.set_comments(comments)
-  session.join_pods(topic='technology', engagement_mode='no_comments')
+  session.join_pods(topic='fintech', engagement_mode='no_comments')

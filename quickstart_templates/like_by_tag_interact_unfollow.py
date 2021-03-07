@@ -10,8 +10,8 @@ from instapy import InstaPy
 from instapy import smart_run
 
 # login credentials
-insta_username = ''
-insta_password = ''
+insta_username = 'caio_on_tech'
+insta_password = '#Pp110717#F'
 
 dont_likes = ['sex', 'nude', 'naked', 'beef', 'pork', 'seafood',
               'egg', 'chicken', 'cheese', 'sausage', 'lobster',
@@ -27,10 +27,10 @@ dont_likes = ['sex', 'nude', 'naked', 'beef', 'pork', 'seafood',
 
 friends = ['list of friends I do not want to interact with']
 
-like_tag_list = ['vegan', 'veganfoodshare', 'veganfood', 'whatveganseat',
-                 'veganfoodie', 'veganism', 'govegan',
-                 'veganism', 'vegansofig', 'veganfoodshare', 'veganfit',
-                 'veggies']
+like_tag_list = ['programming', 'programmer', 'blockchain', 'fanancialmarkets',
+                 'eth', 'ethereum', 'fintech',
+                 'digitalbank', 'digitalbanks', 'softwaredeveloper', 'softwaredevelopers',
+                 'cloud', 'devops', 'alternativeinvestments', 'softwaredevelopers','softwaredevelopers']
 
 # prevent posts that contain some plantbased meat from being skipped
 ignore_list = ['vegan', 'veggie', 'plantbased']
@@ -66,11 +66,11 @@ with smart_run(session):
     """ Joining Engagement Pods...
     """
     photo_comments = ['Nice shot! @{}',
-        'I love your profile! @{}',
+        'I loive your profile! @{}',
         'Wonderful :thumbsup:',
         'Just incredible :open_mouth:',
         'What camera did you use @{}?',
-        'Love your posts @{}',
+        'Like your posts @{}',
         'Looks awesome @{}',
         'Getting inspired by you @{}',
         ':raised_hands: Yes!',
@@ -78,4 +78,4 @@ with smart_run(session):
 
     session.set_do_comment(enabled = True, percentage = 95)
     session.set_comments(photo_comments, media = 'Photo')
-    session.join_pods(topic='travel')
+    session.join_pods(topic='technology')

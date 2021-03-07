@@ -11,7 +11,8 @@ from instapy import InstaPy
 from instapy import smart_run
 
 # get a session!
-session = InstaPy(username='', password='')
+session = InstaPy(username='',
+                  password='')
 
 # let's go! :>
 with smart_run(session):

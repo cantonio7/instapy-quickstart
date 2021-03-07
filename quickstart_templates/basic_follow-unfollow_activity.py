@@ -22,8 +22,8 @@ from instapy import InstaPy
 from instapy import smart_run
 
 # login credentials
-insta_username = ''
-insta_password = ''
+insta_username = 'caio_on_tech'
+insta_password = '#Pp110717#F'
 
 # get an InstaPy session!
 # set headless_browser=True to run InstaPy in the background
@@ -55,7 +55,7 @@ with smart_run(session):
     """
     session.unfollow_users(amount=500, InstapyFollowed=(True, "nonfollowers"),
                            style="FIFO",
-                           unfollow_after=12 * 60 * 60, sleep_delay=601)
+                           unfollow_after=12 * 30 * 300, sleep_delay=601)
 
     """ Second step of Massive Follow...
     """
@@ -66,7 +66,7 @@ with smart_run(session):
     """
     session.unfollow_users(amount=500, InstapyFollowed=(True, "nonfollowers"),
                            style="FIFO",
-                           unfollow_after=12 * 60 * 60, sleep_delay=601)
+                           unfollow_after=12 * 30 * 30, sleep_delay=601)
 
     """ Clean all followed user - Unfollow all users followed by InstaPy...
     """
@@ -81,7 +81,7 @@ with smart_run(session):
         'Cool :thumbsup:',
         'Just incredible :open_mouth:',
         'What camera did you use @{}?',
-        'Love your posts @{}',
+        'Like your posts @{}',
         'Looks awesome @{}',
         'Nice @{}',
         ':raised_hands: Yes!',
